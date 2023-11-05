@@ -1,8 +1,8 @@
 An attempt at a properly structured Tic Tac Toe game.
 Note to selves are areas for improvement.
-# Main.py
+## main.py
 Handles the interface with the user and creates game instances
-# gameFiles
+## gameFiles
 contains the important files that handle each game instance
 ## ai.py
 contains a CPU class that generates the best move
