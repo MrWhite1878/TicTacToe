@@ -1,6 +1,5 @@
 def checkWin(board):
-        # Note to self: try to make this section cleaner
-
+        
         # Check Rows
         for row in board:
             if row[0] == row[1] == row[2] != " ":
@@ -24,6 +23,7 @@ def checkWin(board):
         if tie:
             return "Tie"
         
+        #default
         return False
 
 def isMoveValid(board, row, col):

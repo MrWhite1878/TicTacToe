@@ -30,6 +30,7 @@ class Game:
             else:
                 print("Invalid move! Please retry.")
                 continue
+            # Switch players
             if self.currentPlayer == "X":
                 self.currentPlayer = "O"
             else:
@@ -58,7 +59,6 @@ class Game:
         while not game_logic.checkWin(self.board):
             self.displayBoard()
             print("It is " + self.currentPlayer + "'s turn.")
-            #print(AI.Node(self.board, self.currentPlayer))
             # Collect Moves
             if self.currentPlayer == userPlayer:
                 row = int(input("Enter row: "))
@@ -71,6 +71,7 @@ class Game:
             else:
                 print("Invalid move! Please retry.")
                 continue
+            # Switch players
             if self.currentPlayer == "X":
                 self.currentPlayer = "O"
             else:
@@ -93,7 +94,6 @@ class Game:
         while not game_logic.checkWin(self.board):
             self.displayBoard()
             print("It is " + self.currentPlayer + "'s turn.")
-            #print(AI.Node(self.board, self.currentPlayer))
             # Collect Moves
             if self.currentPlayer == "X":
                 row, col = aiX.getMove(self.board)
@@ -105,6 +105,7 @@ class Game:
             else:
                 print("Invalid move! Please retry.")
                 continue
+            # Switch players
             if self.currentPlayer == "X":
                 self.currentPlayer = "O"
             else:

@@ -1,19 +1,20 @@
 import gameFiles.game_logic as game_logic
 
 class CPU:
+    # evaluation values for the minimax algorithm
     evaluation_values = {
         "X": 1,
         "Tie": 0,
         "O": -1
     }
+    infinity = float("inf")
+    negative_infinity = float("-inf")
 
     def __init__(self, player):
         '''
         player: the player the AI is playing as
         '''
         self.player = player
-        self.infinity = float("inf")
-        self.negative_infinity = float("-inf")
     
     # generates a list of all possible moves
     def possibleMoves(self, board):
